@@ -1178,11 +1178,9 @@ a {
   min-height: 100vh;
   padding-top: var(--header-height);
   background:
-    radial-gradient(
-      circle at top,
+    radial-gradient(circle at top,
       rgba(200, 163, 40, 0.15),
-      transparent 34%
-    ),
+      transparent 34%),
     var(--black);
   color: var(--white);
 }
@@ -1226,7 +1224,7 @@ a {
   background: rgba(255, 255, 255, 0.035);
 }
 
-.price-card + .price-card {
+.price-card+.price-card {
   margin-top: 18px;
 }
 
@@ -1326,4 +1324,16 @@ a {
   .price-actions {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* トップページ：飲み放題メニューだけ文字サイズ調整 */
+.system-card .system-list__wide dd {
+  margin-top: 8px;
+  color: rgba(24, 21, 17, 0.72);
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  text-align: left;
 }
