@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>料金システム | Jennys cafe</title>
+
+  <meta
+    name="description"
+    content="Jennys cafeの料金システムページです。通常料金、延長料金、指名料金、ドリンク料金などをご案内します。"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header is-scrolled" id="siteHeader">
+    <a class="header-logo" href="../index.html" aria-label="Jennys cafe トップへ">
+      Jennys cafe
+    </a>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      type="button"
+      aria-label="メニューを開く"
+      aria-controls="globalNav"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav class="global-nav" id="globalNav" aria-hidden="true">
+    <div class="global-nav__inner">
+      <p class="global-nav__logo">Jennys cafe</p>
+
+      <ul class="global-nav__list">
+        <li><a href="../#about">ABOUT</a></li>
+        <li><a href="../cast/">CAST</a></li>
+        <li><a href="./">SYSTEM</a></li>
+        <li><a href="../#gallery">GALLERY</a></li>
+        <li><a href="../#news">NEWS</a></li>
+        <li><a href="../#access">ACCESS</a></li>
+      </ul>
+
+      <div class="global-nav__links">
+        <a
+          href="https://lin.ee/XRr8v6k"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LINE
+        </a>
+
+        <a
+          href="https://www.instagram.com/jennys__cafe?igsh=ZDBmNXQzcGM1cGpq&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="price-page">
+    <section class="price-hero">
+      <p class="price-hero__en">SYSTEM</p>
+      <h1>料金システム</h1>
+      <p>
+        Jennys cafeの料金システムをご案内いたします。<br>
+        ご不明点は店舗LINEまたはスタッフまでお問い合わせください。
+      </p>
+    </section>
+
+    <section class="price-section">
+      <div class="price-card">
+        <p class="price-card__title">基本料金</p>
+
+        <dl class="price-list">
+          <div>
+            <dt>通常料金</dt>
+            <dd>5,000円</dd>
+          </div>
+
+          <div>
+            <dt>延長料金</dt>
+            <dd>5,000円</dd>
+          </div>
+
+          <div>
+            <dt>延長料金 30min</dt>
+            <dd>3,000円</dd>
+          </div>
+
+          <div>
+            <dt>指名料金</dt>
+            <dd>2,000円</dd>
+          </div>
+
+          <div>
+            <dt>同伴料金</dt>
+            <dd>無料</dd>
+          </div>
+        </dl>
+
+        <p class="price-card__note">
+          ※同伴料金は無料です。SET料金のみ頂戴いたします。
+        </p>
+      </div>
+
+      <div class="price-card">
+        <p class="price-card__title">飲み放題</p>
+
+        <div class="drink-box">
+          <p>焼酎</p>
+          <p>ウイスキー</p>
+          <p>ブランデー</p>
+          <p>ミネラルウォーター</p>
+        </div>
+      </div>
+
+      <div class="price-card">
+        <p class="price-card__title">その他料金</p>
+
+        <dl class="price-list">
+          <div>
+            <dt>キャストドリンク</dt>
+            <dd>1,200円</dd>
+          </div>
+
+          <div>
+            <dt>割物・ビール・樽ハイ</dt>
+            <dd>700円</dd>
+          </div>
+
+          <div>
+            <dt>チャーム</dt>
+            <dd>無料</dd>
+          </div>
+        </dl>
+      </div>
+
+      <p class="price-tax-note">
+        ※別途、消費税・サービス料を頂戴いたします。
+      </p>
+
+      <div class="price-actions">
+        <a
+          class="button button--gold"
+          href="https://lin.ee/XRr8v6k"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LINEで確認
+        </a>
+
+        <a class="button button--outline" href="../index.html">
+          TOPへ戻る
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-logo">Jennys cafe</p>
+
+    <address class="footer-address">
+      滋賀県長浜市
+    </address>
+
+    <div class="footer-business">
+      <div>
+        <span>営業時間</span>
+        <p>21:00〜LAST</p>
+      </div>
+
+      <div>
+        <span>定休日</span>
+        <p>各種SNSにてご案内</p>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <a
+        class="footer-social-link"
+        href="https://lin.ee/XRr8v6k"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LINEで友だち追加"
+      >
+        <i class="fa-brands fa-line" aria-hidden="true"></i>
+      </a>
+
+      <a
+        class="footer-social-link"
+        href="https://www.instagram.com/jennys__cafe?igsh=ZDBmNXQzcGM1cGpq&utm_source=qr"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagramを見る"
+      >
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <small>© 2026 Jennys cafe</small>
+  </footer>
+
+  <div class="fixed-contact">
+    <a
+      class="fixed-contact__line"
+      href="https://lin.ee/XRr8v6k"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      LINEで確認
+    </a>
+
+    <a class="fixed-contact__phone" href="tel:07083922520">
+      電話する
+    </a>
+  </div>
+</body>
+</html>
