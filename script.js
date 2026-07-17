@@ -60,3 +60,57 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach((element) => {
   revealObserver.observe(element);
 });
+
+
+// gallery
+
+const gallerySlider = document.querySelector("[data-gallery-slider]");
+
+if (gallerySlider) {
+  const galleryTrack = gallerySlider.querySelector("[data-gallery-track]");
+  const gallerySlides = gallerySlider.querySelectorAll(".gallery-slide");
+  const galleryPrev = gallerySlider.querySelector("[data-gallery-prev]");
+  const galleryNext = gallerySlider.querySelector("[data-gallery-next]");
+  const galleryThumbs = gallerySlider.querySelectorAll("[data-gallery-thumb]");
+
+  let currentGalleryIndex = 0;
+
+  function updateGallery(index) {
+    const slideCount = gallerySlides.length;
+
+    currentGalleryIndex = (index + slideCount) % slideCount;
+
+    galleryTrack.style.transform = `translateX(-${currentGalleryIndex * 100}%)`;
+
+    gallerySlides.forEach((slide, slideIndex) => {
+      slide.setAttribute(
+        "aria-hidden",
+        String(slideIndex !== currentGalleryIndex)
+      );
+    });
+
+    galleryThumbs.forEach((thumb, thumbIndex) => {
+      const isActive = thumbIndex === currentGalleryIndex;
+
+      thumb.classList.toggle("is-active", isActive);
+      thumb.setAttribute("aria-current", isActive ? "true" : "false");
+    });
+  }
+
+  galleryPrev.addEventListener("click", () => {
+    updateGallery(currentGalleryIndex - 1);
+  });
+
+  galleryNext.addEventListener("click", () => {
+    updateGallery(currentGalleryIndex + 1);
+  });
+
+  galleryThumbs.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+      const index = Number(thumb.dataset.galleryThumb);
+      updateGallery(index);
+    });
+  });
+
+  updateGallery(0);
+}
