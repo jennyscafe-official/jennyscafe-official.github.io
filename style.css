@@ -896,9 +896,9 @@ a {
     border-color 0.25s ease;
 }
 
-.footer-social-icon {
-  width: 28px;
-  height: 28px;
+.footer-social-link i {
+  font-size: 25px;
+  line-height: 1;
 }
 
 .footer-social-link:hover {
