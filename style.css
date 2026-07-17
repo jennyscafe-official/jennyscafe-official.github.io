@@ -57,7 +57,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 120;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -130,7 +130,7 @@ a {
 .global-nav {
   position: fixed;
   inset: 0;
-  z-index: 101;
+  z-index: 110;
   display: grid;
   place-items: center;
   padding: 90px 32px 40px;
