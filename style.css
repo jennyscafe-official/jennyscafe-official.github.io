@@ -945,22 +945,22 @@ a {
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1.35fr 1fr;
     gap: 18px;
+    align-items: stretch;
   }
 
   .gallery-item--large {
-    grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 3;
   }
 
   .gallery-item--large img {
     aspect-ratio: auto;
-    min-height: 460px;
+    min-height: 100%;
   }
 
   .gallery-item:not(.gallery-item--large) img {
-    min-height: 220px;
+    min-height: 180px;
   }
 
   .gallery-item:hover img {
