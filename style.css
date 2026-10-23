@@ -507,17 +507,8 @@ a {
   object-fit: cover;
 }
 
-.cast-card:nth-child(1) img {
+.cast-card[data-cast="nayu"] .cast-card__photo img {
   object-position: center top;
-}
-
-.cast-card:nth-child(2) img {
-  object-position: center center;
-}
-
-.cast-card:nth-child(3) img {
-  object-position: center 8%;
-  transform: translateY(6px) scale(1.1);
 }
 
 .cast-card__info {
