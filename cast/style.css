@@ -188,10 +188,6 @@ footer {
 
 /* ===== Photo Position ===== */
 
-.cast-card[data-cast="nayu"] .photo img {
-  object-position: center top;
-}
-
 /* ===== Desktop ===== */
 
 @media (min-width: 720px) {

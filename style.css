@@ -507,10 +507,6 @@ a {
   object-fit: cover;
 }
 
-.cast-card[data-cast="nayu"] .cast-card__photo img {
-  object-position: center top;
-}
-
 .cast-card__info {
   min-height: 88px;
   padding: 13px 10px 14px;
