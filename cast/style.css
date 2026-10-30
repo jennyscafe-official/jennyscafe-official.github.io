@@ -75,6 +75,38 @@ h1 {
   line-height: 1.9;
 }
 
+/* ===== LINE Contact ===== */
+
+.contact-link {
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.line-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--gold-light);
+  border-radius: 999px;
+  color: var(--black);
+  background: var(--gold-light);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.contact-link:focus-visible,
+.line-button:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 4px;
+}
+
 /* ===== Cast List ===== */
 
 .cast-section {
