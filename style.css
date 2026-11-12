@@ -1254,13 +1254,6 @@ a {
   font-weight: 600;
 }
 
-.price-card__note {
-  margin: 18px 0 0;
-  color: rgba(247, 243, 233, 0.54);
-  font-size: 11px;
-  line-height: 1.8;
-}
-
 .drink-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
